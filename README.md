@@ -1,2 +1,2 @@
 # SistemaBiblioteca
- istema de administracion de bibliotecas
+ Sistema de administracion de bibliotecas
