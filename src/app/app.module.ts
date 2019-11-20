@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { CarroPrestamosComponent } from './carro-prestamos/carro-prestamos.component';
 import { ReservaComponent } from './reserva/reserva.component';
 import { DVDComponent } from './dvd/dvd.component';
+import { SolicitudCompraComponent } from './solicitud-compra/solicitud-compra.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { DVDComponent } from './dvd/dvd.component';
     CarroPrestamosComponent,
     ReservaComponent,
     DVDComponent,
-    ReservaComponent
+    ReservaComponent,
+    SolicitudCompraComponent
   ],
   imports: [
     BrowserModule,
