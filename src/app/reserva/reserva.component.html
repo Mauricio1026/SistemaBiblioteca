@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Reserva</title>
+    </head>
+    <body>
+        <header>
+            <h1>Reserva de material</h1>
+            <!-- <nav>El men&uacute; si procediese</nav> --> <!-- Etiqueta comentada al no tener men&uacute; -->
+        </header>
+        <section>
+
+          <form class="was-validated" action="" method="get">
+            
+            <div class="col-md-4 mb-3">
+              <label for="validationServerUsername">Nombre de  Usuario</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupPrepend3"></span>
+                </div>
+                <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <p>Contraseña: <input type="password" name="contrasena"></p>
+            <p>tipo de material solicitado
+              <select class="custom-select custom-select-sm">
+                <option selected>Tipo de material a reservar</option>
+                <option value="1">Libro</option>
+                <option value="2">periodico</option>
+                <option value="3">DVD</option>
+              </select>
+            </p>
+            <p>Nombre Material: <input type="search" name="busqueda" size="40"></p>
+            <p>Envio a domicilio:</p>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                <label class="custom-control-label" for="customControlValidation2">Si</label>
+              </div>
+              <div class="custom-control custom-radio mb-3">
+                <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                <label class="custom-control-label" for="customControlValidation3">No</label>
+                <div class="invalid-feedback">More example invalid feedback text</div>
+              </div>
+
+
+           Fecha Inicial prestamo: <input type="date" name="fecha">
+           Fecha final prestamo: <input type="date" name="fecha">
+            <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Borrar">
+            </p>
+          </form>
+        </section>
+        <aside>
+            <h3></h3>
+            <ul>
+            </ul>
+        </aside>
+        <footer>
+        </footer>
+    </body>
+</html>
