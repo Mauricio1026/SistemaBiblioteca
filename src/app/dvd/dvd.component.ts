@@ -6,7 +6,9 @@ import { Discos } from './discos';
   templateUrl: './dvd.component.html',
   styleUrls: ['./dvd.component.css']
 })
-export class DvdComponent implements OnInit {
+
+export class DVDComponent implements OnInit {
+
   dvd: Discos[] = [
     {id: 1, nombre: 'none', fecha: '17/11/2019'},
     {id: 2, nombre: 'none', fecha: '17/11/2019'},
