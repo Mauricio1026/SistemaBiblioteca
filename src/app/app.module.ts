@@ -10,6 +10,9 @@ import { ReservaComponent } from './reserva/reserva.component';
 import { DVDComponent } from './dvd/dvd.component';
 import { SolicitudCompraComponent } from './solicitud-compra/solicitud-compra.component';
 
+import { MaterialesComponent } from './materiales/materiales.component';
+import { MaterialesService } from './materiales/materiales.service';
+
 
 @NgModule({
   declarations: [
@@ -19,13 +22,15 @@ import { SolicitudCompraComponent } from './solicitud-compra/solicitud-compra.co
     ReservaComponent,
     DVDComponent,
     ReservaComponent,
-    SolicitudCompraComponent
+    SolicitudCompraComponent,
+    MaterialesComponent,
+    MaterialesService
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MaterialesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

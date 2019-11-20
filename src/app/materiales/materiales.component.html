@@ -1,0 +1,68 @@
+<div class="card text-white bg-primary mb-3" >
+    <div class="card-header"> Libros
+      <button type="button" (click)="setHabilitar()" class="btn btn-info mx-3 my-3">{{ habilitar==true?'ocultar':'mostrar' }}</button>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Listado de Libros</h5>
+
+      <table class="text-white table table-bordered table-striped" *ngIf="habilitar==true">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Autor</th>
+            <th>Pais</th>
+            <th>Fecha de Publ</th>
+            <th>N. de Edicion</th>
+            <th>Referencia</th>
+            <th>Categoria</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let material of materiales">
+            <th>{{ material.nombre }}</th>
+            <th>{{ material.autor }}</th>
+            <th>{{ material.pais }}</th>
+            <th>{{ material.datePublication }}</th>
+            <th>{{ material.edicion }}</th>
+            <th>{{ material.referencia }}</th>
+            <th>{{ material.categoria }}</th>
+            <th>{{ material.id }}</th>
+          </tr>
+        </tbody>
+      </table>
+
+      <button type="button" class="btn btn-success mx-3 my-3">{{'adquirir'}}</button>
+      <button type="button" class="btn btn-success mx-3 my-3">{{'Solicitar prestamo'}}</button>
+      <button type="button" class="btn btn-success mx-3 my-3">{{'descarga'}}</button>
+    </div>
+</div>
+<div class="card text-white bg-primary mb-3" >
+    <div class="card-header">Revistas
+      <button type="button" class="btn btn-info mx-3 my-3">{{'ocultar'}}</button></div>
+    <div class="card-body">
+      <h5 class="card-title">Listado de Revistas </h5>
+      <button type="button" class="btn btn-success mx-3 my-3">{{'adquirir'}}</button>
+      <button type="button" class="btn btn-success mx-3 my-3">{{'Solicitar prestamo'}}</button>
+      <button type="button" class="btn btn-success mx-3 my-3">{{'descarga'}}</button>
+    </div>
+</div>
+<div class="card text-white bg-primary mb-3" >
+    <div class="card-header">Periodicos <button type="button" class="btn btn-info mx-3 my-3">{{'ocultar'}}</button> </div>
+    <div class="card-body">
+        <h5 class="card-title">Listado de Periodicos</h5>
+        <button type="button" class="btn btn-success mx-3 my-3">{{'adquirir'}}</button>  
+        <button type="button" class="btn btn-success mx-3 my-3">{{'Solicitar prestamo'}}</button>
+        <button type="button" class="btn btn-success mx-3 my-3">{{'descarga'}}</button>  
+    </div>
+</div>
+<div class="card text-white bg-primary mb-3" >
+    <div class="card-header">Mapas</div>
+    <div class="card-body">
+      <h5 class="card-title">Listado de Mapas <button type="button" class="btn btn-info mx-3 my-3">{{'ocultar'}}</button></h5>
+      <button type="button" class="btn btn-success mx-3 my-3">{{'adquirir'}}</button>  
+      <button type="button" class="btn btn-success mx-3 my-3">{{'Solicitar prestamo'}}</button>
+      <button type="button" class="btn btn-success mx-3 my-3">{{'descarga'}}</button>
+    </div>
+</div>
