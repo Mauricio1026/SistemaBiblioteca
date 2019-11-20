@@ -1,0 +1,30 @@
+<a class="nav-link" href="#ventanaCompra" data-toggle="modal">Busquedas</a>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    id="ventanaCompra" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="card text-white bg-info mb-3">
+            <div class="card-header">Discos</div>
+            <div class="card-body">
+                <h5 class="card-title">tabla de contenido</h5>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>nombre</th>
+                            <th>fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let discos of dvd">
+                            <td>{{ discos.id }}</td>
+                            <td>{{ discos.nombre }}</td>
+                            <td>{{ discos.fecha }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+    </div>
+
+
