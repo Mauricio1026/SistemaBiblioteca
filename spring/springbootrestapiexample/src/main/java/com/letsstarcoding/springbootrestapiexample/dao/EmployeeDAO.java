@@ -1,0 +1,39 @@
+package com.letsstarcoding.springbootrestapiexample.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.letsstarcoding.springbootrestapiexample.model.Employee;
+import com.letsstarcoding.springbootrestapiexample.repository.EmployeeRepository;
+
+@Service
+public class EmployeeDAO {
+	
+	@Autowired
+	EmployeeRepository employeeRepository;
+	
+	/*Save*/
+	
+	public Employee save(Employee emp) {
+		return employeeRepository.save(emp);
+	}
+	
+	/*search*/
+	
+	public List<Employee> findAll(){
+		return employeeRepository.findAll();
+	}
+	
+	/*Get*/
+	public Employee findOne(Long empid) {
+		return employeeRepository.findOne(empid);
+	}
+	
+	/*delete*/
+	public void delete (Employee emp) {
+		employeeRepository.delete(emp);
+	}
+
+}
